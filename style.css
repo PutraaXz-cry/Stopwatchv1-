@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 36px 24px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #777;
+  margin-bottom: 24px;
+  letter-spacing: 3px;
+}
+
+.time {
+  font-family: "Courier New", monospace;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+.ms {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+button {
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+button:hover:not(:disabled) {
+  background: #fff;
+  color: #000;
+}
+
+button:disabled {
+  border-color: #444;
+  color: #444;
+  cursor: not-allowed;
+}
+
+#startBtn.running {
+  background: #fff;
+  color: #000;
+}
+
+.laps {
+  border-top: 1px solid #333;
+  padding-top: 16px;
+  max-height: 260px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.lap-header {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  padding: 0 8px 10px;
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.lap-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  padding: 10px 8px;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #222;
+}
+
+.lap-row:last-child {
+  border-bottom: none;
+}
+
+.lap-row .num {
+  color: #666;
+}
+
+.empty {
+  text-align: center;
+  color: #555;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}

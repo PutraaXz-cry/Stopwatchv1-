@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>STOPWATCH</h1>
+
+    <div class="time">
+      <span id="time">00:00:00</span><span class="ms" id="ms">.00</span>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="lapBtn" disabled>Lap</button>
+      <button id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <div class="laps" id="laps">
+      <div class="empty">Belum ada lap</div>
+    </div>
+  </div>
+
+  <script src="database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
